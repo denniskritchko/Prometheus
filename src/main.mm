@@ -1,7 +1,9 @@
 #import <Cocoa/Cocoa.h>
 #import <CoreGraphics/CoreGraphics.h>
 #include "GeminiAPI.h"
+#include "Dotenv.h"
 #include <vector>
+#include <iostream>
 
 @interface OverlayWindow : NSWindow
 @end
@@ -32,7 +34,16 @@
 
 @implementation AppDelegate
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    self.geminiAPI = new GeminiAPI("YOUR_API_KEY");
+    auto env = Dotenv::load(".env");
+    std::string apiKey;
+    if (env.count("GEMINI_API_KEY")) {
+        apiKey = env["GEMINI_API_KEY"];
+    } else {
+        std::cerr << "GEMINI_API_KEY not found in .env file" << std::endl;
+        // Handle error appropriately, maybe exit or show an alert
+    }
+
+    self.geminiAPI = new GeminiAPI(apiKey);
 
     NSLog(@"Application finished launching. Creating window.");
     NSRect screenRect = [[NSScreen mainScreen] frame];
