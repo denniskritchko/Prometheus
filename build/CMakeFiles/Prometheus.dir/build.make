@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/denniskritchko/Prometheus
+CMAKE_SOURCE_DIR = /Users/denniskritchko/PrometheusSpark/Prometheus
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/denniskritchko/Prometheus/build
+CMAKE_BINARY_DIR = /Users/denniskritchko/PrometheusSpark/Prometheus/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Prometheus.dir/depend.make
@@ -73,30 +73,79 @@ CMakeFiles/Prometheus.dir/codegen:
 .PHONY : CMakeFiles/Prometheus.dir/codegen
 
 CMakeFiles/Prometheus.dir/src/main.mm.o: CMakeFiles/Prometheus.dir/flags.make
-CMakeFiles/Prometheus.dir/src/main.mm.o: /Users/denniskritchko/Prometheus/src/main.mm
+CMakeFiles/Prometheus.dir/src/main.mm.o: /Users/denniskritchko/PrometheusSpark/Prometheus/src/main.mm
 CMakeFiles/Prometheus.dir/src/main.mm.o: CMakeFiles/Prometheus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/denniskritchko/Prometheus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building OBJCXX object CMakeFiles/Prometheus.dir/src/main.mm.o"
-	/usr/bin/c++ $(OBJCXX_DEFINES) $(OBJCXX_INCLUDES) -x objective-c++ $(OBJCXX_FLAGS) -MD -MT CMakeFiles/Prometheus.dir/src/main.mm.o -MF CMakeFiles/Prometheus.dir/src/main.mm.o.d -o CMakeFiles/Prometheus.dir/src/main.mm.o -c /Users/denniskritchko/Prometheus/src/main.mm
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/denniskritchko/PrometheusSpark/Prometheus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building OBJCXX object CMakeFiles/Prometheus.dir/src/main.mm.o"
+	/usr/bin/c++ $(OBJCXX_DEFINES) $(OBJCXX_INCLUDES) -x objective-c++ $(OBJCXX_FLAGS) -MD -MT CMakeFiles/Prometheus.dir/src/main.mm.o -MF CMakeFiles/Prometheus.dir/src/main.mm.o.d -o CMakeFiles/Prometheus.dir/src/main.mm.o -c /Users/denniskritchko/PrometheusSpark/Prometheus/src/main.mm
 
 CMakeFiles/Prometheus.dir/src/main.mm.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing OBJCXX source to CMakeFiles/Prometheus.dir/src/main.mm.i"
-	/usr/bin/c++ $(OBJCXX_DEFINES) $(OBJCXX_INCLUDES) $(OBJCXX_FLAGS) -E /Users/denniskritchko/Prometheus/src/main.mm > CMakeFiles/Prometheus.dir/src/main.mm.i
+	/usr/bin/c++ $(OBJCXX_DEFINES) $(OBJCXX_INCLUDES) $(OBJCXX_FLAGS) -E /Users/denniskritchko/PrometheusSpark/Prometheus/src/main.mm > CMakeFiles/Prometheus.dir/src/main.mm.i
 
 CMakeFiles/Prometheus.dir/src/main.mm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling OBJCXX source to assembly CMakeFiles/Prometheus.dir/src/main.mm.s"
-	/usr/bin/c++ $(OBJCXX_DEFINES) $(OBJCXX_INCLUDES) $(OBJCXX_FLAGS) -S /Users/denniskritchko/Prometheus/src/main.mm -o CMakeFiles/Prometheus.dir/src/main.mm.s
+	/usr/bin/c++ $(OBJCXX_DEFINES) $(OBJCXX_INCLUDES) $(OBJCXX_FLAGS) -S /Users/denniskritchko/PrometheusSpark/Prometheus/src/main.mm -o CMakeFiles/Prometheus.dir/src/main.mm.s
+
+CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o: CMakeFiles/Prometheus.dir/flags.make
+CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o: /Users/denniskritchko/PrometheusSpark/Prometheus/src/GeminiAPI.cpp
+CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o: CMakeFiles/Prometheus.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/denniskritchko/PrometheusSpark/Prometheus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o -MF CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o.d -o CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o -c /Users/denniskritchko/PrometheusSpark/Prometheus/src/GeminiAPI.cpp
+
+CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/denniskritchko/PrometheusSpark/Prometheus/src/GeminiAPI.cpp > CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.i
+
+CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/denniskritchko/PrometheusSpark/Prometheus/src/GeminiAPI.cpp -o CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.s
+
+CMakeFiles/Prometheus.dir/src/base64.cpp.o: CMakeFiles/Prometheus.dir/flags.make
+CMakeFiles/Prometheus.dir/src/base64.cpp.o: /Users/denniskritchko/PrometheusSpark/Prometheus/src/base64.cpp
+CMakeFiles/Prometheus.dir/src/base64.cpp.o: CMakeFiles/Prometheus.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/denniskritchko/PrometheusSpark/Prometheus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Prometheus.dir/src/base64.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Prometheus.dir/src/base64.cpp.o -MF CMakeFiles/Prometheus.dir/src/base64.cpp.o.d -o CMakeFiles/Prometheus.dir/src/base64.cpp.o -c /Users/denniskritchko/PrometheusSpark/Prometheus/src/base64.cpp
+
+CMakeFiles/Prometheus.dir/src/base64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Prometheus.dir/src/base64.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/denniskritchko/PrometheusSpark/Prometheus/src/base64.cpp > CMakeFiles/Prometheus.dir/src/base64.cpp.i
+
+CMakeFiles/Prometheus.dir/src/base64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Prometheus.dir/src/base64.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/denniskritchko/PrometheusSpark/Prometheus/src/base64.cpp -o CMakeFiles/Prometheus.dir/src/base64.cpp.s
+
+CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o: CMakeFiles/Prometheus.dir/flags.make
+CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o: /Users/denniskritchko/PrometheusSpark/Prometheus/src/Dotenv.cpp
+CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o: CMakeFiles/Prometheus.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/denniskritchko/PrometheusSpark/Prometheus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o -MF CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o.d -o CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o -c /Users/denniskritchko/PrometheusSpark/Prometheus/src/Dotenv.cpp
+
+CMakeFiles/Prometheus.dir/src/Dotenv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Prometheus.dir/src/Dotenv.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/denniskritchko/PrometheusSpark/Prometheus/src/Dotenv.cpp > CMakeFiles/Prometheus.dir/src/Dotenv.cpp.i
+
+CMakeFiles/Prometheus.dir/src/Dotenv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Prometheus.dir/src/Dotenv.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/denniskritchko/PrometheusSpark/Prometheus/src/Dotenv.cpp -o CMakeFiles/Prometheus.dir/src/Dotenv.cpp.s
 
 # Object files for target Prometheus
 Prometheus_OBJECTS = \
-"CMakeFiles/Prometheus.dir/src/main.mm.o"
+"CMakeFiles/Prometheus.dir/src/main.mm.o" \
+"CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o" \
+"CMakeFiles/Prometheus.dir/src/base64.cpp.o" \
+"CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o"
 
 # External object files for target Prometheus
 Prometheus_EXTERNAL_OBJECTS =
 
 Prometheus: CMakeFiles/Prometheus.dir/src/main.mm.o
+Prometheus: CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o
+Prometheus: CMakeFiles/Prometheus.dir/src/base64.cpp.o
+Prometheus: CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o
 Prometheus: CMakeFiles/Prometheus.dir/build.make
+Prometheus: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
 Prometheus: CMakeFiles/Prometheus.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/denniskritchko/Prometheus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking OBJCXX executable Prometheus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/denniskritchko/PrometheusSpark/Prometheus/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Prometheus"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Prometheus.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +157,6 @@ CMakeFiles/Prometheus.dir/clean:
 .PHONY : CMakeFiles/Prometheus.dir/clean
 
 CMakeFiles/Prometheus.dir/depend:
-	cd /Users/denniskritchko/Prometheus/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/denniskritchko/Prometheus /Users/denniskritchko/Prometheus /Users/denniskritchko/Prometheus/build /Users/denniskritchko/Prometheus/build /Users/denniskritchko/Prometheus/build/CMakeFiles/Prometheus.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/denniskritchko/PrometheusSpark/Prometheus/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/denniskritchko/PrometheusSpark/Prometheus /Users/denniskritchko/PrometheusSpark/Prometheus /Users/denniskritchko/PrometheusSpark/Prometheus/build /Users/denniskritchko/PrometheusSpark/Prometheus/build /Users/denniskritchko/PrometheusSpark/Prometheus/build/CMakeFiles/Prometheus.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Prometheus.dir/depend
 

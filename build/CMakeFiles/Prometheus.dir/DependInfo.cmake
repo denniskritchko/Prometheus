@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/denniskritchko/Prometheus/src/main.mm" "CMakeFiles/Prometheus.dir/src/main.mm.o" "gcc" "CMakeFiles/Prometheus.dir/src/main.mm.o.d"
+  "/Users/denniskritchko/PrometheusSpark/Prometheus/src/Dotenv.cpp" "CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o" "gcc" "CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o.d"
+  "/Users/denniskritchko/PrometheusSpark/Prometheus/src/GeminiAPI.cpp" "CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o" "gcc" "CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o.d"
+  "/Users/denniskritchko/PrometheusSpark/Prometheus/src/base64.cpp" "CMakeFiles/Prometheus.dir/src/base64.cpp.o" "gcc" "CMakeFiles/Prometheus.dir/src/base64.cpp.o.d"
+  "/Users/denniskritchko/PrometheusSpark/Prometheus/src/main.mm" "CMakeFiles/Prometheus.dir/src/main.mm.o" "gcc" "CMakeFiles/Prometheus.dir/src/main.mm.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

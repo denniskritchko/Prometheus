@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/denniskritchko/Prometheus
+CMAKE_SOURCE_DIR = /Users/denniskritchko/PrometheusSpark/Prometheus
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/denniskritchko/Prometheus/build
+CMAKE_BINARY_DIR = /Users/denniskritchko/PrometheusSpark/Prometheus/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/denniskritchko/Prometheus/build/CMakeFiles /Users/denniskritchko/Prometheus/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/denniskritchko/PrometheusSpark/Prometheus/build/CMakeFiles /Users/denniskritchko/PrometheusSpark/Prometheus/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/denniskritchko/Prometheus/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/denniskritchko/PrometheusSpark/Prometheus/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,78 @@ Prometheus/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Prometheus.dir/build.make CMakeFiles/Prometheus.dir/build
 .PHONY : Prometheus/fast
 
+src/Dotenv.o: src/Dotenv.cpp.o
+.PHONY : src/Dotenv.o
+
+# target to build an object file
+src/Dotenv.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Prometheus.dir/build.make CMakeFiles/Prometheus.dir/src/Dotenv.cpp.o
+.PHONY : src/Dotenv.cpp.o
+
+src/Dotenv.i: src/Dotenv.cpp.i
+.PHONY : src/Dotenv.i
+
+# target to preprocess a source file
+src/Dotenv.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Prometheus.dir/build.make CMakeFiles/Prometheus.dir/src/Dotenv.cpp.i
+.PHONY : src/Dotenv.cpp.i
+
+src/Dotenv.s: src/Dotenv.cpp.s
+.PHONY : src/Dotenv.s
+
+# target to generate assembly for a file
+src/Dotenv.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Prometheus.dir/build.make CMakeFiles/Prometheus.dir/src/Dotenv.cpp.s
+.PHONY : src/Dotenv.cpp.s
+
+src/GeminiAPI.o: src/GeminiAPI.cpp.o
+.PHONY : src/GeminiAPI.o
+
+# target to build an object file
+src/GeminiAPI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Prometheus.dir/build.make CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.o
+.PHONY : src/GeminiAPI.cpp.o
+
+src/GeminiAPI.i: src/GeminiAPI.cpp.i
+.PHONY : src/GeminiAPI.i
+
+# target to preprocess a source file
+src/GeminiAPI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Prometheus.dir/build.make CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.i
+.PHONY : src/GeminiAPI.cpp.i
+
+src/GeminiAPI.s: src/GeminiAPI.cpp.s
+.PHONY : src/GeminiAPI.s
+
+# target to generate assembly for a file
+src/GeminiAPI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Prometheus.dir/build.make CMakeFiles/Prometheus.dir/src/GeminiAPI.cpp.s
+.PHONY : src/GeminiAPI.cpp.s
+
+src/base64.o: src/base64.cpp.o
+.PHONY : src/base64.o
+
+# target to build an object file
+src/base64.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Prometheus.dir/build.make CMakeFiles/Prometheus.dir/src/base64.cpp.o
+.PHONY : src/base64.cpp.o
+
+src/base64.i: src/base64.cpp.i
+.PHONY : src/base64.i
+
+# target to preprocess a source file
+src/base64.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Prometheus.dir/build.make CMakeFiles/Prometheus.dir/src/base64.cpp.i
+.PHONY : src/base64.cpp.i
+
+src/base64.s: src/base64.cpp.s
+.PHONY : src/base64.s
+
+# target to generate assembly for a file
+src/base64.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Prometheus.dir/build.make CMakeFiles/Prometheus.dir/src/base64.cpp.s
+.PHONY : src/base64.cpp.s
+
 src/main.o: src/main.mm.o
 .PHONY : src/main.o
 
@@ -146,6 +218,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Prometheus"
+	@echo "... src/Dotenv.o"
+	@echo "... src/Dotenv.i"
+	@echo "... src/Dotenv.s"
+	@echo "... src/GeminiAPI.o"
+	@echo "... src/GeminiAPI.i"
+	@echo "... src/GeminiAPI.s"
+	@echo "... src/base64.o"
+	@echo "... src/base64.i"
+	@echo "... src/base64.s"
 	@echo "... src/main.o"
 .PHONY : help
 
